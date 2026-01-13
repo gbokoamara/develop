@@ -25,7 +25,7 @@ export const Header = () => {
         <nav className=" mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <a href="/" className="flex items-center space-x-3">
               <div className="h-10 w-10 bg-emerald-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">D</span>
               </div>
@@ -33,7 +33,7 @@ export const Header = () => {
                 <h1 className="text-xl font-bold text-emerald-900">Develop</h1>
                 <p className="text-xs text-gray-500">Digital Solutions</p>
               </div>
-            </div>
+            </a>
 
             {/* Navigation Desktop */}
             <div className="hidden md:flex items-center space-x-6">

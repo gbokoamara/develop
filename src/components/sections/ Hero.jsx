@@ -3,7 +3,7 @@ export const Hero = () => {
   return (
     <section
   id="presentation"
-  className="py-32 text-white flex items-center" // plus compact
+  className="md:py-32 text-white flex items-center" // plus compact
 >
   <div className="max-w-6xl mx-auto px-6 text-center">
     <h1 className="text-3xl md:text-5xl font-bold leading-tight">
