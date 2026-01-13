@@ -18,7 +18,7 @@ export const Header = () => {
       setIsMenuOpen(false);
     }
   };
-  
+
   return (
     <>
       <div className="sticky top-0 z-50 bg-sky-500  backdrop-blur-sm shadow-sm">
@@ -29,9 +29,9 @@ export const Header = () => {
               <div className="h-10 w-10 bg-emerald-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">D</span>
               </div>
-              <div>
+              <div className="grid  place-items-center">
                 <h1 className="text-xl font-bold text-emerald-900">Develop</h1>
-                <p className="text-xs text-gray-500">job digitalizer</p>
+                <p className="text-xs text-gray-500">Digital Solutions</p>
               </div>
             </div>
 
