@@ -6,11 +6,11 @@ export const Footer = () => {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 rounded-full -translate-x-32 translate-y-32 blur-3xl"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/5 rounded-full translate-x-32 -translate-y-32 blur-3xl"></div>
 
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative  mx-auto px-6">
         {/* Grille principale */}
         <div className="grid gap-10 md:grid-cols-12 mb-12">
           {/* Logo et identité */}
-          <div className="md:col-span-4">
+          <a href="/" className="md:col-span-4">
             <div className="flex items-center gap-3 mb-6">
               <div className="bg-linear-to-br from-blue-500 to-purple-600 w-10 h-10 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-xl font-bold">D</span>
@@ -36,7 +36,7 @@ export const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
-                  className="group bg-gray-800 hover:bg-linear-to-r hover:from-blue-600 hover:to-purple-600 w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                  className="group  bg-gray-800 hover:bg-linear-to-r hover:from-blue-600 hover:to-purple-600 w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
                   aria-label={social.label}
                 >
                   <span className="text-xl group-hover:scale-110 transition-transform">
@@ -45,16 +45,16 @@ export const Footer = () => {
                 </a>
               ))}
             </div>
-          </div>
+          </a>
 
           {/* Navigation */}
-          <div className="md:col-span-4">
-            <h3 className="text-xl font-bold mb-8 relative inline-block">
+          <div className="md:col-span-4 ">
+            <h3 className="text-xl font-bold mb-8 relative inline-block ">
               Navigation
               <span className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-blue-500 to-purple-500 rounded-full -translate-y-1"></span>
             </h3>
 
-            <ul className="space-y-4">
+            <ul className="space-y-4 md:grid md:grid-cols-3 ">
               {[
                 { label: "Accueil", href: "#presentation", icon: "🏠" },
                 { label: "Services", href: "#services", icon: "⚡" },
@@ -62,7 +62,7 @@ export const Footer = () => {
                 { label: "À propos", href: "#about", icon: "👤" },
                 { label: "Contact", href: "#contact", icon: "📞" },
               ].map((item, index) => (
-                <li key={index}>
+                <li key={index} >
                   <a
                     href={item.href}
                     className="group flex items-center gap-3 text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-2"
